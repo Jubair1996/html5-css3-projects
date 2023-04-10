@@ -1,0 +1,212 @@
+/* Google Fonts Links */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Common Css */
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
+}
+.container {
+  margin: 0 auto;
+  background-color: #161616;
+  border-radius: 10px;
+}
+/* Header Section Starts */
+.container {
+  margin: 0 auto;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 100px;
+}
+.head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  color: #ffffff;
+}
+.greatest {
+  margin-left: 30px;
+}
+.greatest p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 10px;
+  text-align: justify;
+}
+.btn {
+  background-color: #dd0000;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.btn:hover {
+  background-color: #a0a03e;
+}
+.fa-arrow-right {
+  padding-left: 15px;
+}
+.player,
+img {
+  width: 100%;
+  height: 100vh;
+}
+/* Header Section  Ends*/
+/* Upcoming Match Starts */
+.upcoming-conatainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+.upcoming-matceh {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  margin-top: 90px;
+  margin-right: 20px;
+  background-color: #161616;
+  border-radius: 5px;
+}
+.upcoming-matceh,
+.upcoming-btn,
+.upcoming-blog {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.upcoming-matceh,
+.upcoming-btn {
+  color: #161616;
+}
+.upcoming-blog {
+  background-color: #dd0000;
+  color: #ffffff;
+  padding: 10px 60px;
+}
+.upcoming-blog:hover {
+  background-color: #808080;
+}
+
+.players {
+  margin: 80px 0 220px 0;
+}
+.blog-banner {
+  display: flex;
+  align-items: center;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.players,
+.blog-banner img {
+  width: 93.04px;
+  height: 56.18px;
+}
+.date,
+p {
+  margin-top: 0;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 95px 0 0 10px;
+  border: 2px solid rgba(128, 128, 128, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+}
+.vs {
+  padding: 10px;
+  text-align: center;
+}
+
+.date h2,
+p {
+  color: black;
+}
+/* Upcoming Match Ends */
+/* Footer Section Starts */
+.contact-us {
+  background-color: #161616;
+}
+.goal {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+hr {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact,
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 30px;
+  color: #b9b9b9;
+}
+.contact-us,
+.contact,
+a:hover {
+  color: #ff0000;
+}
+.social-icon,
+.icon {
+  color: #dd0000;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.icon:hover {
+  color: #8b8585;
+}
+/* Footer Section Ends */
+/* Media Queries Starts*/
+@media only screen and (max-width: 600px) {
+  .player-info {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .upcoming-conatainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px){
+
+  .upcoming-conatainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
